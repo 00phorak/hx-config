@@ -2,8 +2,24 @@ theme = "rose_pine"
 
 [editor]
 soft-wrap.enable = true
-lsp.display-inlay-hints=true
+line-number = "relative"
+completion-replace = true
+bufferline = "always"
+auto-pairs = false
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.lsp]
+display-inlay-hints = true	
+
+[editor.file-picker]
+hidden = false
 
 [keys.normal]
 C-j = ["extend_to_line_bounds", "delete_selection", "paste_after"]
 C-k = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before"]
+"'" = "select_register"
+
